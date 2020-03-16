@@ -69,11 +69,12 @@
 }
 
 .schedule-wrap {
-
     padding: 40px;
     background: $primary;
     max-width: 700px;
-    position: relative;
+	position: absolute;
+	top: 0;
+	left: 0;
     z-index: 9;
     color: rgba($white, 1);
 	@media (min-width: 768px) {

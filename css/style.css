@@ -995,7 +995,9 @@ h1, h2, h3, h4, h5,
   padding: 40px;
   background: #f23a2e;
   max-width: 700px;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   z-index: 9;
   color: white;
 }
