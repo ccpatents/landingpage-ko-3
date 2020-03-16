@@ -1,0 +1,51 @@
+// Styling for the call to action section
+#download {
+    position: relative;
+    padding: 250px 0;
+    background-image: url('../images/install.png');
+    background-size: auto;
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+
+    @media (min-width: 999px) { 
+        background-size: cover;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to bottom, #{fade-out(rgb(90, 90, 90), .3)} 0%, #{fade-out(rgb(90, 90, 90), .45)} 100%)
+    }
+
+    .download-content {
+        position: relative;
+        z-index: 1;
+        h2 {
+            font-size: 35px;
+            font-weight: 600;
+            margin-top: 0;
+            margin-bottom: 25px;
+            color: white;
+        }
+        h3 {
+            font-size: 25px;
+            margin-bottom: 25px;
+            font-weight: 500;
+            color: white;
+        }
+        @media (min-width: 768px) {
+            h2 {
+                font-size: 50px;
+            }
+            h3 {
+                font-size: 35px;
+            }
+        }
+    }
+    .btn-xl {
+        font-size: 18px !important;
+    }
+}

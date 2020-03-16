@@ -24,7 +24,6 @@ a {
 
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
-	font-family: $font-family-sans-serif;
 	color: $black;
 }
 
@@ -163,7 +162,6 @@ h1, h2, h3, h4, h5,
 	border-radius: 0px;
 	background: none;
 	border-width: 2px;
-	font-family: $font-family-sans-serif;
 	&:active, &:focus {
 		border-color: $primary;
 		background: none;
@@ -174,13 +172,13 @@ h1, h2, h3, h4, h5,
 }
 
 .site-section {
-	padding: 2.5em 0;
+	padding-top:2.5rem;
 	@include media-breakpoint-up(md) {
-		padding: 5em 0;
+		padding-top: 3.5rem;
 	}
 
 	&.site-section-sm {
-		padding: 4em 0;
+		padding-top: 3.5em;
 	}
 }
 
@@ -336,13 +334,12 @@ h1, h2, h3, h4, h5,
 	li {
 		position: relative;
 		padding-left: 35px;
-		margin-bottom: 15px;
-		line-height: 1.5;
-		&:before {
-			left: 0;
+		margin-bottom: 15px; 
+		line-height: 1.5; 
+		&:before { 
+			left: 0; 
 			font-size: 20px;
 			top: -.3rem;
-			font-family: "icomoon";
 			content: "\e5ca";
 			position: absolute;
 		}

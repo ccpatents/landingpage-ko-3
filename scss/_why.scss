@@ -1,0 +1,120 @@
+#why {
+    padding: 7rem 0;
+    position: relative;
+    background-image: url('../images/header-bg-m.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to bottom, #{fade-out(rgb(90, 90, 90), .3)} 0%, #{fade-out(rgb(90, 90, 90), .45)} 100%)
+    }
+    h3 {
+        color: white;
+        font-size: 25px;
+    }
+    h2 {
+        color: white;
+        font-size: 40px;
+        margin-top: 0;
+    }
+    p {
+        font-size: 18px;
+    }
+
+    b {
+        font-weight: 900 !important;
+    }
+
+    u {
+        text-decoration: none;
+        padding-bottom: 3px;
+        border-bottom: 3px solid $primary;
+    }
+
+    .badges {
+        .badge-link {
+            display: block;
+            margin-bottom: 25px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            img {
+                height: 60px;
+            }
+            @media(min-width: 768px) {
+                display: inline-block;
+                margin-bottom: 0;
+            }
+        }
+    }
+    @media(min-width: 768px) {
+        h2 {
+            font-size: 50px;
+        }
+        p {
+            font-size: 20px;
+        }
+    }
+
+    @media(min-width: 999px) {
+        background-image: url('../images/why_bg.png');
+        h3 {
+            font-size: 35px;
+        }
+        h2 {
+            font-size: 70px;
+        }
+    }
+
+    .schedule-wrap {
+        padding: 40px;
+        background: $primary;
+        max-width: 700px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        color: rgba($white, 1);
+        @media (min-width: 768px) {
+            transform: translateY(-50%);
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            display: block;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            background: inherit;
+            -webkit-transform-origin: bottom left;
+            transform-origin: bottom left;
+            -webkit-transform: skew(-12deg,0deg);
+            transform: skew(-12deg,0deg);
+            @media (min-width: 768px) {
+                width: 100%;
+            }
+        }
+        strong {
+            color: $white;
+            font-weight: bold;
+        }
+    
+        .cta {
+            a {
+                text-align: center;
+                padding: 10px 20px;
+                .arrow {
+                    font-size: 1.2rem;
+                    position: relative;
+                    top: 3px;
+                }
+            }
+        }
+    }
+}
