@@ -1,3 +1,27 @@
 #features {
     padding-top: 5rem;
+
+    .ftco-feature-1 {
+        text-align: center;
+        transition: 0.3s all ease;
+        background: $white;
+        .icon {
+            font-size: 70px;
+            color: $primary;
+        }
+        .ftco-feature-1-text {
+            padding: 30px;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        p {
+            color: rgb(152, 152, 152);
+        }
+        &.active,
+        &:hover {
+            box-shadow: 0 0 20px -5px rgba($black, .1);
+        }
+    }
 }
