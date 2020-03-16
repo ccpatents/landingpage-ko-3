@@ -986,13 +986,7 @@ h1, h2, h3, h4, h5,
 }
 
 .post .text:hover, .post .text:focus {
-  padding: 25% 0;
-}
-
-@media (min-width: 768px) {
-  .post .text:hover, .post .text:focus {
-    padding: 50% 0;
-  }
+  padding: 50% 0;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
