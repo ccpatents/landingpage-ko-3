@@ -1,7 +1,7 @@
 #why {
     padding: 7rem 0;
     position: relative;
-    background-image: url('../images/header-bg-m.png');
+    background-image: url('../images/why/why-bg-m.png');
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
@@ -62,7 +62,7 @@
     }
 
     @media(min-width: 999px) {
-        background-image: url('../images/why_bg.png');
+        background-image: url('../images/why/why_bg.png');
         h3 {
             font-size: 35px;
         }
