@@ -166,7 +166,7 @@ jQuery(document).ready(function($) {
 				stagePadding: 30,
 		    margin: 0,
 				autoplay: true,
-				smartSpeed: 1000,
+				smartSpeed: 2000,
 		    nav: true,
 				navText: ['<span class="icon-arrow_back">', '<span class="icon-arrow_forward">'],
 		    responsive:{
@@ -179,13 +179,13 @@ jQuery(document).ready(function($) {
 	        	margin: 30,
 	        	
 	        	nav: true,
-	          items: 2
+	          items: 3
 	        },
 	        1200:{
 	        	margin: 30,
 	        	
 	        	nav: true,
-	          items: 3
+	          items: 4
 	        }
 		    }
 			});

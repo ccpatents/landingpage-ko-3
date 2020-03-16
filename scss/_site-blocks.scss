@@ -1,6 +1,6 @@
 .intro-section {
 	position: relative;
-	background-image: linear-gradient(to bottom, #{fade-out($gray-700, .3)} 0%, #{fade-out($gray-700, .45)} 100%),url('../images/header-bg-m-l.png');
+	background-image: linear-gradient(to bottom, #{fade-out($gray-700, .3)} 0%, #{fade-out($gray-700, .45)} 100%),url('../images/header-bg-m.png');
 	z-index: 11;
 	@media (min-width: 768px) {
 		z-index: 9;
@@ -164,9 +164,81 @@
     }
 }
 
+.post {
+	position: relative;
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	z-index: 0;
+	margin-bottom: 50px;
+
+	.img {
+		position: relative;
+		overflow: hidden;
+		border: 2px solid rgba(231, 231, 231, 0.7);
+		@include border-radius(0px);
+		-webkit-box-shadow: 0px 42px 29px -31px rgba(0, 0, 0, 0.05);
+		-moz-box-shadow: 0px 42px 29px -31px rgba(0, 0, 0, 0.05);
+		box-shadow: 0px 42px 29px -31px rgba(0, 0, 0, 0.05);
+	}
+
+	img {
+		z-index: -1;
+	}
+
+	.text {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		padding: 1em 0;
+		background: rgba(255, 255, 255, .9);
+		background: $secondary;
+		opacity: .7;
+		.price {
+			background: $primary;
+		}
+		&:hover,
+		&:focus {
+			padding: 50% 0;
+		}
+		@include transition(.6s);
+
+		span {
+			font-weight: 500;
+			font-size: 13px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			color: rgba(255, 255, 255, .8);
+		}
+
+		a {
+			color: $white;
+
+			&:hover,
+			&:focus {
+				text-decoration: none;
+				padding-top: 50%;
+			}
+		}
+
+		h3 {
+			color: $white;
+			font-size: 20px;
+			font-weight: 600;
+			margin-bottom: 0;
+		}
+
+		div {
+			color: $white;
+			text-align: right;
+		}
+	}
+}
+
+
 .ftco-feature-1 {
     text-align: center;
-    padding-top: 30px;
     transition: 0.3s all ease;
     background: $white;
     .icon {
