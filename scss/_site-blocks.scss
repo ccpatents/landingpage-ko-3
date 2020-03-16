@@ -1,8 +1,15 @@
 .intro-section {
-    position: relative;
+	position: relative;
+	background-image: linear-gradient(to bottom, #{fade-out($gray-700, .3)} 0%, #{fade-out($gray-700, .45)} 100%),url('../images/header-bg-m-l.png');
+	z-index: 11;
+	@media (min-width: 768px) {
+		z-index: 9;
+		background-image: none;
+	}
     > .container {
         z-index: 10;
-        position: relative;
+		position: relative;
+		
     }
     &,
     .container .row {

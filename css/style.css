@@ -903,6 +903,16 @@ h1, h2, h3, h4, h5,
 /* Blocks */
 .intro-section {
   position: relative;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(73, 80, 87, 0.7)), to(rgba(73, 80, 87, 0.55))), url("../images/header-bg-m-l.png");
+  background-image: linear-gradient(to bottom, rgba(73, 80, 87, 0.7) 0%, rgba(73, 80, 87, 0.55) 100%), url("../images/header-bg-m-l.png");
+  z-index: 11;
+}
+
+@media (min-width: 768px) {
+  .intro-section {
+    z-index: 9;
+    background-image: none;
+  }
 }
 
 .intro-section > .container {
