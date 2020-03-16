@@ -113,7 +113,7 @@
  		if ($('.nonloop-block-13').length > 0) {
  			$('.nonloop-block-13').owlCarousel({
  				center: false,
- 				items: 2,
+ 				items: 1,
  				loop: true,
  				stagePadding: 30,
  				margin: 20,
@@ -122,6 +122,10 @@
  				nav: true,
  				navText: ['<span class="icon-arrow_back">', '<span class="icon-arrow_forward">'],
  				responsive: {
+					768: {
+						margin: 30,
+						items: 2
+					},
  					1000: {
  						margin: 30,
  						items: 3
@@ -133,7 +137,7 @@
  		if ($('.nonloop-block-14').length > 0) {
  			$('.nonloop-block-14').owlCarousel({
  				center: false,
- 				items: 2,
+ 				items: 1,
  				loop: true,
  				stagePadding: 30,
  				margin: 20,
@@ -142,6 +146,10 @@
  				nav: true,
  				navText: ['<span class="icon-arrow_back">', '<span class="icon-arrow_forward">'],
  				responsive: {
+					768: {
+						margin: 30,
+						items: 2
+					},
  					1000: {
  						margin: 30,
  						items: 3

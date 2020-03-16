@@ -80,7 +80,11 @@
 		}
 		&:hover,
 		&:focus {
-			padding: 50% 0;
+            padding: 25% 0;
+            @media(min-width: 768px) {
+                padding: 50% 0;
+            }
+            
 		}
 		@include transition(.6s);
 
