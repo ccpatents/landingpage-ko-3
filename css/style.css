@@ -471,7 +471,7 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
 }
 
 .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a {
-  padding: 5px 20px;
+  padding: 5px 13px;
   color: #000;
   display: inline-block;
   text-decoration: none !important;
@@ -483,6 +483,12 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
 
 .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a.active:after {
   background: #f23a2e;
+}
+
+@media (min-width: 1100px) {
+  .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a {
+    padding: 5px 20px;
+  }
 }
 
 .sticky-wrapper .shrink {

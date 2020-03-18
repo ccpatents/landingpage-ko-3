@@ -433,7 +433,7 @@
 				> li {
 					display: inline-block;
 					> a {
-						padding: 5px 20px;
+						padding: 5px 13px;
 						color: $black;
 						display: inline-block;
 						text-decoration: none!important;
@@ -446,6 +446,10 @@
 							&:after {
 								background: $primary;
 							}
+						}
+
+						@media(min-width: 1100px) {
+							padding: 5px 20px;
 						}
 					}
 				}
