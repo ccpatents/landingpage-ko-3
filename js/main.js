@@ -185,28 +185,6 @@ var video6;
  	};
  	siteStellar();
 
- 	var siteCountDown = function () {
-
- 		$('#date-countdown').countdown('2020/10/10', function (event) {
- 			var $this = $(this).html(event.strftime('' +
- 				'<span class="countdown-block"><span class="label">%w</span> weeks </span>' +
- 				'<span class="countdown-block"><span class="label">%d</span> days </span>' +
- 				'<span class="countdown-block"><span class="label">%H</span> hr </span>' +
- 				'<span class="countdown-block"><span class="label">%M</span> min </span>' +
- 				'<span class="countdown-block"><span class="label">%S</span> sec</span>'));
- 		});
-
- 	};
- 	siteCountDown();
-
- 	var siteDatePicker = function () {
-
- 		if ($('.datepicker').length > 0) {
- 			$('.datepicker').datepicker();
- 		}
-
- 	};
- 	siteDatePicker();
 
  	var siteSticky = function () {
  		$(".js-sticky-header").sticky({
@@ -234,9 +212,6 @@ var video6;
  	OnePageNavigation();
 
  	var siteScroll = function () {
-
-
-
  		$(window).scroll(function () {
 
  			var st = $(this).scrollTop();
@@ -251,11 +226,6 @@ var video6;
 
  	};
  	siteScroll();
-
-
- 	$(function () {
- 		$("#bgndVideo").YTPlayer();
- 	});
 
  	var tag = document.createElement('script');
 
@@ -318,6 +288,10 @@ var video6;
 	  events: {
 		'onStateChange': onPlayerStateChange
 	  }
+	});
+
+	$(function () {
+		$("#bgndVideo").YTPlayer();
 	});
   }
   
