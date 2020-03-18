@@ -1,24 +1,33 @@
 header.masthead {
     position: relative;
-	background-image: linear-gradient(to bottom, #{fade-out($gray-700, .3)} 0%, #{fade-out($gray-700, .45)} 100%),url('../images/mast-bg-m.png');
-	z-index: 11;
-	@media (min-width: 768px) {
-		z-index: 9;
-		background-image: none;
-	}
-    > .container {
-        z-index: 10;
-		position: relative;
-		
+    background-image: linear-gradient(to bottom, #{fade-out($gray-700, .3)} 0%, #{fade-out($gray-700, .45)} 100%),
+    url('../images/mast-bg-m.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 11;
+
+    @media (min-width: 768px) {
+        z-index: 9;
+        //background-image: none;
     }
+
+    >.container {
+        z-index: 10;
+        position: relative;
+
+    }
+
     &,
     .container .row {
-		padding-top: 3rem;
-		min-height: 70vh;
-		@media (min-width: 768px) {
-			height: 100vh;
-		}
+        padding-top: 3rem;
+        min-height: 70vh;
+
+        @media (min-width: 768px) {
+            height: 100vh;
+        }
     }
+
     &:before {
         content: "";
         position: absolute;
@@ -27,10 +36,12 @@ header.masthead {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+
         @include media-breakpoint-down(md) {
             width: 100%;
         }
     }
+
     &:after {
         content: "";
         position: absolute;
@@ -46,23 +57,28 @@ header.masthead {
         font-size: 4rem;
         font-weight: 900;
         color: $white;
+
         @include media-breakpoint-down(md) {
             font-size: 2rem;
         }
     }
+
     .desc {
-        color: rgba(255,255,255,1);
+        color: rgba(255, 255, 255, 1);
         font-size: 1.4rem;
         max-width: 700px;
 
     }
+
     a {
         color: $white;
         text-decoration: underline;
+
         &:hover {
             text-decoration: none;
         }
     }
+
     .btn {
         text-decoration: none;
     }

@@ -222,7 +222,7 @@ jQuery(document).ready(function ($) {
 
 	setTimeout(function () {
 		$("#bgndVideo").YTPlayer();
-	}, 2000);
+	}, 1500);
 });
 
 function onYouTubeIframeAPIReady() {
