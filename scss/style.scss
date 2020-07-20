@@ -19,15 +19,16 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
 @import "bootstrap/mixins";
 
 /* Base */
-@import "site-base";
+//@import "site-base";
 /* Navbar */
 @import "site-navbar";
 /* Blocks */
-@import "site-blocks";
 @import "_global";
 @import "_masthead";
 @import "_why";
 @import "features";
 @import "_videos";
 @import "_download";
+@import "_partners";
+@import "_blog";
 @import "_contact";

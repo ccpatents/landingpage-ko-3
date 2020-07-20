@@ -1,4 +1,4 @@
-#features {
+#partners {
     padding-top: 5rem;
 
     .ftco-feature-1 {
@@ -22,6 +22,19 @@
         &.active,
         &:hover {
             box-shadow: 0 0 20px -5px rgba($black, .1);
+        }
+    }
+
+    .block-13 {
+        .owl-nav {
+            display: none;
+        }
+    
+        .owl-stage {
+            padding-bottom: 2rem;
+        }
+        .owl-dots {
+            display: none;
         }
     }
 }

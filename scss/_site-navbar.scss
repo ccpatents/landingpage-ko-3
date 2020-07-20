@@ -38,8 +38,11 @@
 				// > a {
 					color: $primary;
 					display: inline-block;
-					padding: 5px 20px;
+					padding: 5px 13px;
 				// }
+				@media(min-width : 1100px) {
+					padding: 5px 20px;
+				}
 			}
 			a {
 				text-decoration: none!important;
@@ -48,7 +51,7 @@
 			> li {
 				display: inline-block;
 				> a {
-					padding: 5px 20px;
+					padding: 5px 13px;
 					color: $white;
 					display: inline-block;
 					text-decoration: none!important;
@@ -57,13 +60,17 @@
 						color: $white;
 						
 					}
+
+					@media(min-width : 1100px) {
+						padding: 5px 20px;
+					}
 				}
 			}
 			.has-children {
 				position: relative;
 				> a {
 					position: relative;
-					padding-right: 20px;						
+					padding-right: 15px;						
 					&:before {
 						position: absolute;
 						content: "\e313";
@@ -426,7 +433,7 @@
 				> li {
 					display: inline-block;
 					> a {
-						padding: 5px 20px;
+						padding: 5px 13px;
 						color: $black;
 						display: inline-block;
 						text-decoration: none!important;
@@ -439,6 +446,10 @@
 							&:after {
 								background: $primary;
 							}
+						}
+
+						@media(min-width: 1100px) {
+							padding: 5px 20px;
 						}
 					}
 				}
