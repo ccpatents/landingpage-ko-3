@@ -61,10 +61,6 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
   <link href="css/jquery.mb.YTPlayer.min.css" media="all" rel="stylesheet" type="text/css">
 
   <link rel="stylesheet" href="css/style.css">
-  <script>
-    var popOption = "width=370, height=360, resizable=no, scrollbars=no, status=no;";
-    window.open("https://www1.ccpatents.net", "", popOption)
-  </script>
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -134,6 +130,7 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
             <p class="lead mx-auto desc mb-5">특허 검색이 최소 5배는 빨라집니다.</p>
             <p class="text-center">
               <a href="#why" class="btn btn-outline-white py-3 px-5 js-scroll-trigger">더 알아보기</a>
+              <button onclick="popup();">클릭</button>
             </p>
           </div>
         </div>
@@ -897,6 +894,14 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
     <script data-cfasync="false" src="js/form-submission-handler.min.js"></script>
 
     <script src="js/main.min.js"></script>
+
+    <script>
+      function popup() {
+        var popOption = "width=370, height=360, resizable=no, scrollbars=no, status=no;";
+        window.open("https://www1.ccpatents.net", "", popOption)
+      }
+      
+    </script>
     <script>if (window.module) module = window.module;</script>
 
 </body>
